@@ -1,0 +1,459 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-framework/Essentials/Notification" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Notification | My Site</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://docloud-dev.github.io/docloud-docs-public/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://docloud-dev.github.io/docloud-docs-public/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://docloud-dev.github.io/docloud-docs-public/docs/framework/Essentials/Notification /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Notification | My Site"/><meta data-rh=true name=description content="Owner: Nuwan Danushka"/><meta data-rh=true property=og:description content="Owner: Nuwan Danushka"/><link data-rh=true rel=icon href=/docloud-docs-public/img/favicon.ico /><link data-rh=true rel=canonical href=https://docloud-dev.github.io/docloud-docs-public/docs/framework/Essentials/Notification /><link data-rh=true rel=alternate href=https://docloud-dev.github.io/docloud-docs-public/docs/framework/Essentials/Notification hreflang=en /><link data-rh=true rel=alternate href=https://docloud-dev.github.io/docloud-docs-public/docs/framework/Essentials/Notification hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://docloud-dev.github.io/docloud-docs-public/docs/framework/Essentials/Notification","name":"Notification","position":1}]}</script><link rel=stylesheet href=/docloud-docs-public/assets/css/styles.ac9f1a99.css /><script src=/docloud-docs-public/assets/js/runtime~main.40f75d48.js defer></script><script src=/docloud-docs-public/assets/js/main.382d89ba.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-a2b")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/docloud-docs-public/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/docloud-docs-public/><div class=navbar__logo><img src=/docloud-docs-public/img/logo.svg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/docloud-docs-public/img/logo.svg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docloud-docs-public/docs/Home>Tutorial</a><a class="navbar__item navbar__link" href=/docloud-docs-public/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/facebook/docusaurus target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docloud-docs-public/docs/Home><span title="DoFramework - Wiki v2" class=linkLabel_WmDU>DoFramework - Wiki v2</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docloud-docs-public/docs/><span title=docloud-wiki class=linkLabel_WmDU>docloud-wiki</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href="/docloud-docs-public/docs/framework/Admin Panel"><span title=framework class=categoryLinkLabel_W154>framework</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Admin Panel"><span title="Admin Panel" class=linkLabel_WmDU>Admin Panel</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Core Classes"><span title="Core Classes" class=linkLabel_WmDU>Core Classes</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Docloud><span title=Docloud class=linkLabel_WmDU>Docloud</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href="/docloud-docs-public/docs/framework/Essentials/App Options"><span title=Essentials class=categoryLinkLabel_W154>Essentials</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Essentials/App Options"><span title="App Options" class=linkLabel_WmDU>App Options</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Essentials/Authentication><span title=Authentication class=linkLabel_WmDU>Authentication</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Essentials/Config Handlers"><span title="Config Handlers" class=linkLabel_WmDU>Config Handlers</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Essentials/Email><span title=Email class=linkLabel_WmDU>Email</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Essentials/Localization><span title=Localization class=linkLabel_WmDU>Localization</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Essentials/Logging><span title=Logging class=linkLabel_WmDU>Logging</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docloud-docs-public/docs/framework/Essentials/Notification><span title=Notification class=linkLabel_WmDU>Notification</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Essentials/Scheduler (Heartbeat)"><span title="Scheduler (Heartbeat)" class=linkLabel_WmDU>Scheduler (Heartbeat)</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Essentials/Service Worker"><span title="Service Worker" class=linkLabel_WmDU>Service Worker</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Essentials/User Device Detection"><span title="User Device Detection" class=linkLabel_WmDU>User Device Detection</span></a></ul><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Essentials><span title=Essentials class=linkLabel_WmDU>Essentials</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Get Started"><span title="Get Started" class=linkLabel_WmDU>Get Started</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href="/docloud-docs-public/docs/framework/Modules/App Manager"><span title=Modules class=categoryLinkLabel_W154>Modules</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Modules><span title=Modules class=linkLabel_WmDU>Modules</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Todo App"><span title="Todo App" class=linkLabel_WmDU>Todo App</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Vue DC UI KIT"><span title="Vue DC UI KIT" class=linkLabel_WmDU>Vue DC UI KIT</span></a></ul></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/docloud-docs-public/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>framework</span><li class=breadcrumbs__item><span class=breadcrumbs__link>Essentials</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Notification</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Notification</h1></header>
+<p>Owner: Nuwan Danushka</p>
+<h1>Notification App</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=introduction>Introduction<a href=#introduction class=hash-link aria-label="Direct link to Introduction" title="Direct link to Introduction" translate=no>​</a></h2>
+<p>The "Notification App" is a default system within the Do Framework designed to efficiently manage notifications. This app enables users to send customized notifications to individuals or groups through various applications. The flexibility of customization allows for tailoring notifications according to specific needs, whether it's delivering important updates, alerts, or personalized messages. The "Notification App" provides a seamless solution for keeping users informed, with a user-friendly interface and adaptability that makes it a valuable tool for enhancing communication within the Do Framework environment.</p>
+<p>User notification preferences are stored in the database. By default, notifications are defined in the app's XML configuration with the <code>default</code> property set to <code>true</code>, applying to all users initially.</p>
+<p>Notification preferences can be customized in several ways:</p>
+<ol>
+<li class=""><strong>Admin Panel:</strong> Admins can adjust notification settings globally.</li>
+<li class=""><strong>Role-Based Settings:</strong> Specific notification preferences can be set for each user role in adminpanel.</li>
+<li class=""><strong>User Settings:</strong> Individual users can personalize their notification preferences in the app settings, with their choices recorded separately in the database.</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=usage>Usage<a href=#usage class=hash-link aria-label="Direct link to Usage" title="Direct link to Usage" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=push-notification-for-a-user>Push Notification for a User<a href=#push-notification-for-a-user class=hash-link aria-label="Direct link to Push Notification for a User" title="Direct link to Push Notification for a User" translate=no>​</a></h3>
+<p>This is how you can send a push notification to a user through an app. Let's break it down step by step:</p>
+<ol>
+<li class="">
+<p><strong>Define Action:</strong></p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">$action = array('action' => 'go_to_path', 'value' => '/user');</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">$action = json_encode($action);</span><br/></div></code></pre></div></div>
+<p>Here, an action is defined as an associative array with two key-value pairs: 'action' and 'value'. You can define any action and its value depending on the developer's requirements. In this example, we are instructing the system to change the route when the user clicks the notification. This action is then converted to a JSON string using <strong><code>json_encode</code></strong> to pass it as a parameter.</p>
+</li>
+<li class="">
+<p><strong>Create Notification App Instance:</strong></p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">$notificationApp = AppManager::CreateAppInstance('xp_notification');</span><br/></div></code></pre></div></div>
+<p>An instance of the <strong><code>xp_notification</code></strong> app is created using the <strong><code>AppManager::CreateAppInstance</code></strong> method.</p>
+</li>
+<li class="">
+<p><strong>Push Notification for User:</strong></p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">$notificationApp->pushNotificationForUser($user_id, $app_name, $type, $title, $notification_icon, $notification_message, $status, $action);</span><br/></div></code></pre></div></div>
+<p>Finally, a push notification is sent to a specific user. The parameters are as follows:</p>
+<ul>
+<li class=""><strong><code>$user_id</code></strong>: User ID of the recipient.</li>
+<li class=""><strong><code>$app_name</code></strong>: Name of the app sending the notification.</li>
+<li class=""><strong><code>$type</code></strong>: Notification type (any integer number as needed).</li>
+<li class=""><strong><code>$title</code></strong>: Title of the notification.</li>
+<li class=""><strong><code>$notification_icon</code></strong>: Icon for the notification.</li>
+<li class=""><strong><code>$notification_message</code></strong>: Message to be included in the notification.</li>
+<li class=""><strong><code>$status</code></strong>: 1 for unread, 0 for read.</li>
+<li class=""><strong><code>$action</code></strong>: The previously defined action in JSON format.</li>
+</ul>
+</li>
+</ol>
+<p>In summary, this code is a simplified representation of how to send a push notification to a user through the <strong><code>xp_notification</code></strong> app, including details such as user ID, app name, notification type, notification status, title, icon, message, and an associated action to be performed when the user interacts with the notification (in this case, navigating to the '/user' path).</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=functions>Functions<a href=#functions class=hash-link aria-label="Direct link to Functions" title="Direct link to Functions" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=pushnotificationforuser>pushNotificationForUser<a href=#pushnotificationforuser class=hash-link aria-label="Direct link to pushNotificationForUser" title="Direct link to pushNotificationForUser" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description>Description:<a href=#description class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>pushNotificationForUser</code></strong> function is designed to send notifications to specific users.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">pushNotificationForUser($user_id, $app_name, $type, $title, $icon, $description, $status, $action)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$user_id</code></strong>: The identifier of the target user.</li>
+<li class=""><strong><code>$app_name</code></strong>: The name of the application triggering the notification.</li>
+<li class=""><strong><code>$type</code></strong>: The type of notification.</li>
+<li class=""><strong><code>$title</code></strong>: The title of the notification.</li>
+<li class=""><strong><code>$icon</code></strong>: The icon associated with the notification.</li>
+<li class=""><strong><code>$description</code></strong>: The detailed description accompanying the notification.</li>
+<li class=""><strong><code>$status</code></strong>: The status of the notification.</li>
+<li class=""><strong><code>$action</code></strong>: The action to be taken upon interacting with the notification.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function streamlines the process of notifying specific users, offering a straightforward and organized approach to managing notifications within an application.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=pushnotificationforusersroles>pushNotificationForUsersRoles<a href=#pushnotificationforusersroles class=hash-link aria-label="Direct link to pushNotificationForUsersRoles" title="Direct link to pushNotificationForUsersRoles" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>pushNotificationForUsersRoles</code></strong> function is created to send notifications to users belonging to a specific role.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">NotificationForUsersRoles($role_id, $app_name, $type, $title, $icon, $description, $status, $action)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$role_id</code></strong>: The identifier of the target role.</li>
+<li class=""><strong><code>$app_name</code></strong>: The name of the application triggering the notification.</li>
+<li class=""><strong><code>$type</code></strong>: The type of notification.</li>
+<li class=""><strong><code>$title</code></strong>: The title of the notification.</li>
+<li class=""><strong><code>$icon</code></strong>: The icon associated with the notification.</li>
+<li class=""><strong><code>$description</code></strong>: The detailed description accompanying the notification.</li>
+<li class=""><strong><code>$status</code></strong>: The status of the notification.</li>
+<li class=""><strong><code>$action</code></strong>: The action to be taken upon interacting with the notification.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function facilitates the process of notifying users based on their assigned roles, providing a clear and organized way to manage notifications within an application.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=endpoints><strong>Endpoints</strong><a href=#endpoints class=hash-link aria-label="Direct link to endpoints" title="Direct link to endpoints" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=get><strong>GET</strong><a href=#get class=hash-link aria-label="Direct link to get" title="Direct link to get" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>list</strong>
+<ul>
+<li class="">List all notifications belonging to a user.</li>
+</ul>
+</li>
+<li class=""><strong>list_new</strong>
+<ul>
+<li class="">List new notifications belonging to a user.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=post><strong>POST</strong><a href=#post class=hash-link aria-label="Direct link to post" title="Direct link to post" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>add</strong>
+<ul>
+<li class="">Add a new notification.</li>
+</ul>
+</li>
+<li class=""><strong>remove</strong>
+<ul>
+<li class="">Remove a notification.</li>
+</ul>
+</li>
+<li class=""><strong>update</strong>
+<ul>
+<li class="">Update a notification.</li>
+</ul>
+</li>
+<li class=""><strong>mark_read</strong>
+<ul>
+<li class="">Mark a notification as read.</li>
+</ul>
+</li>
+<li class=""><strong>clear_all</strong>
+<ul>
+<li class="">Delete all notifications belonging to a user.</li>
+</ul>
+</li>
+<li class=""><strong>mark_read_all</strong>
+<ul>
+<li class="">Mark all notifications as read.</li>
+</ul>
+</li>
+</ul>
+<p>These endpoints provide a comprehensive set of functionalities for managing notifications within the system. Developers can use these endpoints to retrieve lists of notifications, add new ones, remove or update existing notifications, mark them as read, and perform bulk actions such as clearing all notifications or marking all as read. The clear naming convention makes it easy to understand the purpose and functionality of each endpoint in the context of the Notification App.</p>
+<hr/>
+<h1>Notification Module</h1>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=introduction-1>Introduction<a href=#introduction-1 class=hash-link aria-label="Direct link to Introduction" title="Direct link to Introduction" translate=no>​</a></h2>
+<p>The "Notification Module" in the Do Framework efficiently manages personalized notifications, allowing users to stay informed. With customization options for various needs, it delivers updates, alerts, and personalized messages seamlessly. The user-friendly interface enhances communication within the Do Framework environment.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=functions-1>Functions<a href=#functions-1 class=hash-link aria-label="Direct link to Functions" title="Direct link to Functions" translate=no>​</a></h2>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=pushnotification>pushNotification<a href=#pushnotification class=hash-link aria-label="Direct link to pushNotification" title="Direct link to pushNotification" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-1>Description:<a href=#description-1 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>pushNotification</code></strong> function is designed for sending notifications efficiently.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">pushNotification(NotificationModel $notification)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class="">
+<p><strong><code>$notification</code></strong>: An instance of the <strong><code>NotificationModel</code></strong> class containing the necessary information for the notification.</p>
+<ul>
+<li class=""><strong><code>user_id</code></strong></li>
+<li class=""><strong><code>app_name</code></strong></li>
+<li class=""><strong><code>title</code></strong></li>
+<li class=""><strong><code>type</code></strong></li>
+<li class=""><strong><code>description</code></strong></li>
+</ul>
+<p>(All properties are required)</p>
+</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function streamlines the process of pushing notifications, allowing for seamless integration within your applications.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=pushnotificationbatch>pushNotificationBatch<a href=#pushnotificationbatch class=hash-link aria-label="Direct link to pushNotificationBatch" title="Direct link to pushNotificationBatch" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-2>Description:<a href=#description-2 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>pushNotificationBatch</code></strong> function is designed to send notifications in batches.</p>
+<p>The <strong><code>$user_ids</code></strong> array should adhere to the following format:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">$user_ids = array(1,2,3,4,5);</span><br/></div></code></pre></div></div>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">pushNotificationBatch(NotificationModel $notification, array $user_ids)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class="">
+<p><strong><code>$notification</code></strong>: An instance of the <strong><code>NotificationModel</code></strong> class containing the necessary information for the notification.</p>
+<ul>
+<li class=""><strong><code>user_id</code></strong></li>
+<li class=""><strong><code>app_name</code></strong></li>
+<li class=""><strong><code>title</code></strong></li>
+<li class=""><strong><code>type</code></strong></li>
+<li class=""><strong><code>description</code></strong></li>
+</ul>
+<p>(All properties are required)</p>
+</li>
+<li class="">
+<p><strong><code>$user_ids</code></strong>: The user id list.</p>
+</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function streamlines the process of notifying specific users, offering a straightforward and organized approach to managing notifications within an application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=markasreadnotification>markAsReadNotification<a href=#markasreadnotification class=hash-link aria-label="Direct link to markAsReadNotification" title="Direct link to markAsReadNotification" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-3>Description:<a href=#description-3 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>markAsReadNotification</code></strong> function is designed to mark as read.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">markAsReadNotification(NotificationModel $notification)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class="">
+<p><strong><code>$notification</code></strong>: An instance of the <strong><code>NotificationModel</code></strong> class containing the necessary information for the notification.</p>
+<ul>
+<li class=""><strong><code>user_id</code></strong></li>
+</ul>
+<p>(All properties are required)</p>
+</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function streamlines the process of marking notifications as read, providing a convenient method for managing notification status within your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=markallasreadnotification>markAllAsReadNotification<a href=#markallasreadnotification class=hash-link aria-label="Direct link to markAllAsReadNotification" title="Direct link to markAllAsReadNotification" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-4>Description:<a href=#description-4 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>markAllAsReadNotification</code></strong> function is designed to mark all notifications of a user as read.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">markAllAsReadNotification(NotificationModel $notification)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class="">
+<p><strong><code>$notification</code></strong>: An instance of the <strong><code>NotificationModel</code></strong> class containing the necessary information for the notification.</p>
+<ul>
+<li class=""><strong><code>user_id</code></strong></li>
+</ul>
+<p>(All properties are required)</p>
+</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function streamlines the process of marking all notifications of a user as read, providing a convenient method for managing notification statuses within your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=removenotification>removeNotification<a href=#removenotification class=hash-link aria-label="Direct link to removeNotification" title="Direct link to removeNotification" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-5>Description:<a href=#description-5 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>removeNotification</code></strong> This function provides a convenient way to remove specific notifications for a user, aiding in the efficient management of notification data within your application.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">removeNotification(NotificationModel $notification)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class="">
+<p><strong><code>$notification</code></strong>: An instance of the <strong><code>NotificationModel</code></strong> class containing the necessary information for the notification.</p>
+<ul>
+<li class=""><strong><code>user_id</code></strong></li>
+</ul>
+<p>(All properties are required)</p>
+</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a convenient way to remove specific notifications for a user, aiding in the efficient management of notification data within your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=removenotificationbyuser>removeNotificationByUser<a href=#removenotificationbyuser class=hash-link aria-label="Direct link to removeNotificationByUser" title="Direct link to removeNotificationByUser" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-6>Description:<a href=#description-6 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>removeNotificationByUser</code></strong> function is designed to send notifications to specific users.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">removeNotificationByUser(NotificationModel $notification)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class="">
+<p><strong><code>$notification</code></strong>: An instance of the <strong><code>NotificationModel</code></strong> class containing the necessary information for the notification.</p>
+<ul>
+<li class=""><strong><code>user_id</code></strong></li>
+</ul>
+<p>(All properties are required)</p>
+</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function streamlines the process of notifying specific users, offering a straightforward and organized approach to managing notifications within an application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=removeallnotifications>removeAllNotifications<a href=#removeallnotifications class=hash-link aria-label="Direct link to removeAllNotifications" title="Direct link to removeAllNotifications" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-7>Description:<a href=#description-7 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>removeAllNotifications</code></strong> function is designed to remove all notifications.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">removeAllNotifications()</span><br/></div></code></pre></div></div>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a convenient and efficient way to remove all notifications, aiding in the comprehensive management of notification data within your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getallnotifications>getAllNotifications<a href=#getallnotifications class=hash-link aria-label="Direct link to getAllNotifications" title="Direct link to getAllNotifications" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-8>Description:<a href=#description-8 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>getAllNotifications</code></strong> function is designed to retrieve all notifications.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">getAllNotifications($page = null, $records_per_page = null)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$page</code></strong> (optional): The page number for paginated results.</li>
+<li class=""><strong><code>$records_per_page</code></strong> (optional): The number of records per page for paginated results.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array of notifications if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function facilitates the retrieval of all notifications, providing options for pagination to handle large sets of data in a convenient manner within your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getnotificationsbyuser>getNotificationsByUser<a href=#getnotificationsbyuser class=hash-link aria-label="Direct link to getNotificationsByUser" title="Direct link to getNotificationsByUser" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-9>Description:<a href=#description-9 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>getNotificationsByUser</code></strong> function is designed to retrieve notifications belonging to a specific user.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">pushNotificationForUsergetNotificationsByUser(NotificationModel $notification, $page = null, $records_per_page = null)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class="">
+<p><strong><code>$notification</code></strong>: An instance of the <strong><code>NotificationModel</code></strong> class containing the necessary information for the notification.</p>
+<ul>
+<li class=""><strong><code>user_id</code></strong></li>
+</ul>
+<p>(All properties are required)</p>
+</li>
+<li class="">
+<p><strong><code>$page</code></strong> (optional): The page number for paginated results.</p>
+</li>
+<li class="">
+<p><strong><code>$records_per_page</code></strong> (optional): The number of records per page for paginated results.</p>
+</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array of notifications if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function facilitates the retrieval of notifications for a specific user, providing options for pagination to handle large sets of data in a convenient manner within your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getnotificationsbycompany>getNotificationsByCompany<a href=#getnotificationsbycompany class=hash-link aria-label="Direct link to getNotificationsByCompany" title="Direct link to getNotificationsByCompany" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-10>Description:<a href=#description-10 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>getNotificationsByCompany</code></strong> function is designed to retrieve notifications by company ID.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">getNotificationsByCompany(NotificationModel $notification, $page = null, $records_per_page = null)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class="">
+<p><strong><code>$notification</code></strong>: An instance of the <strong><code>NotificationModel</code></strong> class containing the necessary information for the notification.</p>
+<ul>
+<li class=""><strong><code>company_id</code></strong></li>
+</ul>
+<p>(All properties are required)</p>
+</li>
+<li class="">
+<p><strong><code>$page</code></strong> (optional): The page number for paginated results.</p>
+</li>
+<li class="">
+<p><strong><code>$records_per_page</code></strong> (optional): The number of records per page for paginated results.</p>
+</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array of notifications if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function facilitates the retrieval of notifications by company ID, providing options for pagination to handle large sets of data in a convenient manner within your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=checknotificationexist>checkNotificationExist<a href=#checknotificationexist class=hash-link aria-label="Direct link to checkNotificationExist" title="Direct link to checkNotificationExist" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-11>Description:<a href=#description-11 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>checkNotificationExist</code></strong> function is designed to check if a notification exists.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">checkNotificationExist(NotificationModel $notification)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class="">
+<p><strong><code>$notification</code></strong>: An instance of the <strong><code>NotificationModel</code></strong> class containing the necessary information for the notification.</p>
+<ul>
+<li class=""><strong><code>id</code></strong></li>
+</ul>
+<p>(All properties are required)</p>
+</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>1</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a convenient way to check the existence of a notification, returning a specific value to indicate success or failure within your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=updatenotification>updateNotification<a href=#updatenotification class=hash-link aria-label="Direct link to updateNotification" title="Direct link to updateNotification" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-12>Description:<a href=#description-12 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>updateNotification</code></strong> function is designed to update a notification.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">updateNotification(NotificationModel $notification)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>id</code></strong>: The identifier of the notification.</li>
+<li class=""><strong><code>$app_name</code></strong> (optional): The name of the application triggering the notification.</li>
+<li class=""><strong><code>$type</code></strong> (optional): The type of notification.</li>
+<li class=""><strong><code>$title</code></strong> (optional): The title of the notification.</li>
+<li class=""><strong><code>$icon</code></strong> (optional): The icon associated with the notification.</li>
+<li class=""><strong><code>$description</code></strong> (optional): The detailed description accompanying the notification.</li>
+<li class=""><strong><code>$status</code></strong> (optional): The status of the notification.</li>
+<li class=""><strong><code>$action</code></strong> (optional): The action to be taken upon interacting with the notification.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a flexible way to update various properties of a notification, allowing for efficient management and customization within your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getnotificationsbyid>getNotificationsByID<a href=#getnotificationsbyid class=hash-link aria-label="Direct link to getNotificationsByID" title="Direct link to getNotificationsByID" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-13>Description:<a href=#description-13 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>getNotificationsByID</code></strong> function is designed to retrieve notifications by their unique identifier.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">getNotificationsByID(NotificationModel $notification)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class="">
+<p><strong><code>$notification</code></strong>: An instance of the <strong><code>NotificationModel</code></strong> class containing the necessary information for the notification.</p>
+<ul>
+<li class=""><strong><code>id</code></strong></li>
+</ul>
+<p>(All properties are required)</p>
+</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function streamlines the process of retrieving notifications based on their unique identifier, providing a straightforward method for accessing specific notifications within your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=initializenotification>initializeNotification<a href=#initializenotification class=hash-link aria-label="Direct link to initializeNotification" title="Direct link to initializeNotification" translate=no>​</a></h3>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=description-14>Description:<a href=#description-14 class=hash-link aria-label="Direct link to Description:" title="Direct link to Description:" translate=no>​</a></h3>
+<p>The <strong><code>initializeNotification</code></strong> function is designed to create a table for storing notifications.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">initializeNotification()</span><br/></div></code></pre></div></div>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function streamlines the process of initializing a notification table, providing a convenient way to set up the necessary database structure for managing notifications within your application.</p>
+<hr/></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/framework/Essentials/Notification.md target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docloud-docs-public/docs/framework/Essentials/Logging><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Logging</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docloud-docs-public/docs/framework/Essentials/Scheduler (Heartbeat)"><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Scheduler (Heartbeat)</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#introduction class="table-of-contents__link toc-highlight">Introduction</a><li><a href=#usage class="table-of-contents__link toc-highlight">Usage</a><ul><li><a href=#push-notification-for-a-user class="table-of-contents__link toc-highlight">Push Notification for a User</a></ul><li><a href=#functions class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href=#pushnotificationforuser class="table-of-contents__link toc-highlight">pushNotificationForUser</a><li><a href=#description class="table-of-contents__link toc-highlight">Description:</a><li><a href=#pushnotificationforusersroles class="table-of-contents__link toc-highlight">pushNotificationForUsersRoles</a></ul><li><a href=#endpoints class="table-of-contents__link toc-highlight"><strong>Endpoints</strong></a><ul><li><a href=#get class="table-of-contents__link toc-highlight"><strong>GET</strong></a><li><a href=#post class="table-of-contents__link toc-highlight"><strong>POST</strong></a></ul><li><a href=#introduction-1 class="table-of-contents__link toc-highlight">Introduction</a><li><a href=#functions-1 class="table-of-contents__link toc-highlight">Functions</a><ul><li><a href=#pushnotification class="table-of-contents__link toc-highlight">pushNotification</a><li><a href=#description-1 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#pushnotificationbatch class="table-of-contents__link toc-highlight">pushNotificationBatch</a><li><a href=#description-2 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#markasreadnotification class="table-of-contents__link toc-highlight">markAsReadNotification</a><li><a href=#description-3 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#markallasreadnotification class="table-of-contents__link toc-highlight">markAllAsReadNotification</a><li><a href=#description-4 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#removenotification class="table-of-contents__link toc-highlight">removeNotification</a><li><a href=#description-5 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#removenotificationbyuser class="table-of-contents__link toc-highlight">removeNotificationByUser</a><li><a href=#description-6 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#removeallnotifications class="table-of-contents__link toc-highlight">removeAllNotifications</a><li><a href=#description-7 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#getallnotifications class="table-of-contents__link toc-highlight">getAllNotifications</a><li><a href=#description-8 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#getnotificationsbyuser class="table-of-contents__link toc-highlight">getNotificationsByUser</a><li><a href=#description-9 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#getnotificationsbycompany class="table-of-contents__link toc-highlight">getNotificationsByCompany</a><li><a href=#description-10 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#checknotificationexist class="table-of-contents__link toc-highlight">checkNotificationExist</a><li><a href=#description-11 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#updatenotification class="table-of-contents__link toc-highlight">updateNotification</a><li><a href=#description-12 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#getnotificationsbyid class="table-of-contents__link toc-highlight">getNotificationsByID</a><li><a href=#description-13 class="table-of-contents__link toc-highlight">Description:</a><li><a href=#initializenotification class="table-of-contents__link toc-highlight">initializeNotification</a><li><a href=#description-14 class="table-of-contents__link toc-highlight">Description:</a></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docloud-docs-public/docs/intro>Tutorial</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docloud-docs-public/blog>Blog</a><li class=footer__item><a href=https://github.com/facebook/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div></body>

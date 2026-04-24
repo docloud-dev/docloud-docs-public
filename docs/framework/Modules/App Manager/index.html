@@ -1,0 +1,851 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-framework/Modules/App Manager" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>App Manager | My Site</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://docloud-dev.github.io/docloud-docs-public/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://docloud-dev.github.io/docloud-docs-public/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content="https://docloud-dev.github.io/docloud-docs-public/docs/framework/Modules/App Manager"/><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="App Manager | My Site"/><meta data-rh=true name=description content="Owner: Nuwan Danushka"/><meta data-rh=true property=og:description content="Owner: Nuwan Danushka"/><link data-rh=true rel=icon href=/docloud-docs-public/img/favicon.ico /><link data-rh=true rel=canonical href="https://docloud-dev.github.io/docloud-docs-public/docs/framework/Modules/App Manager"/><link data-rh=true rel=alternate href="https://docloud-dev.github.io/docloud-docs-public/docs/framework/Modules/App Manager" hreflang=en /><link data-rh=true rel=alternate href="https://docloud-dev.github.io/docloud-docs-public/docs/framework/Modules/App Manager" hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://docloud-dev.github.io/docloud-docs-public/docs/framework/Modules/App Manager","name":"App Manager","position":1}]}</script><link rel=stylesheet href=/docloud-docs-public/assets/css/styles.ac9f1a99.css /><script src=/docloud-docs-public/assets/js/runtime~main.40f75d48.js defer></script><script src=/docloud-docs-public/assets/js/main.382d89ba.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-a2b")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/docloud-docs-public/img/logo.svg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/docloud-docs-public/><div class=navbar__logo><img src=/docloud-docs-public/img/logo.svg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/docloud-docs-public/img/logo.svg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">My Site</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docloud-docs-public/docs/Home>Tutorial</a><a class="navbar__item navbar__link" href=/docloud-docs-public/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/facebook/docusaurus target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div><div class=navbarSearchContainer_Bca1></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docloud-docs-public/docs/Home><span title="DoFramework - Wiki v2" class=linkLabel_WmDU>DoFramework - Wiki v2</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docloud-docs-public/docs/><span title=docloud-wiki class=linkLabel_WmDU>docloud-wiki</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true href="/docloud-docs-public/docs/framework/Admin Panel"><span title=framework class=categoryLinkLabel_W154>framework</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Admin Panel"><span title="Admin Panel" class=linkLabel_WmDU>Admin Panel</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Core Classes"><span title="Core Classes" class=linkLabel_WmDU>Core Classes</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Docloud><span title=Docloud class=linkLabel_WmDU>Docloud</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href="/docloud-docs-public/docs/framework/Essentials/App Options"><span title=Essentials class=categoryLinkLabel_W154>Essentials</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Essentials><span title=Essentials class=linkLabel_WmDU>Essentials</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Get Started"><span title="Get Started" class=linkLabel_WmDU>Get Started</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role=button aria-expanded=true tabindex=0 href="/docloud-docs-public/docs/framework/Modules/App Manager"><span title=Modules class=categoryLinkLabel_W154>Modules</span></a></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href="/docloud-docs-public/docs/framework/Modules/App Manager"><span title="App Manager" class=linkLabel_WmDU>App Manager</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Modules/Curl><span title=Curl class=linkLabel_WmDU>Curl</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Modules/Encryption><span title=Encryption class=linkLabel_WmDU>Encryption</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Modules/Exchanger API"><span title="Exchanger API" class=linkLabel_WmDU>Exchanger API</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Modules/File Manager"><span title="File Manager" class=linkLabel_WmDU>File Manager</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Modules/JSON Manager"><span title="JSON Manager" class=linkLabel_WmDU>JSON Manager</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role=button aria-expanded=false tabindex=0 href="/docloud-docs-public/docs/framework/Modules/Util/Common Functions"><span title=Util class=categoryLinkLabel_W154>Util</span></a></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Modules/Util><span title=Util class=linkLabel_WmDU>Util</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Modules/XML Manager"><span title="XML Manager" class=linkLabel_WmDU>XML Manager</span></a></ul><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docloud-docs-public/docs/framework/Modules><span title=Modules class=linkLabel_WmDU>Modules</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Todo App"><span title="Todo App" class=linkLabel_WmDU>Todo App</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href="/docloud-docs-public/docs/framework/Vue DC UI KIT"><span title="Vue DC UI KIT" class=linkLabel_WmDU>Vue DC UI KIT</span></a></ul></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/docloud-docs-public/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><span class=breadcrumbs__link>framework</span><li class=breadcrumbs__item><span class=breadcrumbs__link>Modules</span><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>App Manager</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>App Manager</h1></header>
+<p>Owner: Nuwan Danushka</p>
+<h1>Introduction</h1>
+<p>The AppManager module simplifies application and database management through two main classes: AppManager and AppManagerDatabaseFunctions. AppManager handles tasks like starting and stopping apps, managing user permissions, and retrieving app details. On the other hand, AppManagerDatabaseFunctions facilitates smooth communication with the database, offering functions to create, update, and retrieve data. Together, these classes provide an organized and user-friendly solution for effective application management, promoting reusability and scalability while maintaining a clear distinction between application logic and database interactions.</p>
+<hr/>
+<h1>AppManager Class</h1>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=functions-for-database-operations>Functions For Database Operations<a href=#functions-for-database-operations class=hash-link aria-label="Direct link to Functions For Database Operations" title="Direct link to Functions For Database Operations" translate=no>​</a></h2>
+<p>This documentation provides a detailed overview of essential functions within the framework, specifically designed to streamline database operations. Let's delve into the functionality of each crucial function:</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=createtable>createTable<a href=#createtable class=hash-link aria-label="Direct link to createTable" title="Direct link to createTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>createTable</code></strong> function is designed to create tables dynamically by specifying the table name, an array of columns, and optionally, the primary key column.</p>
+<p>The <strong><code>$ColumnAndDataType</code></strong> array should adhere to the following format:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">$ColumnAndDataType = array(</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "id" => "int(20) NOT NULL AUTO_INCREMENT",</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "name" => "varchar(255)",</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    // Add more columns as needed</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">);</span><br/></div></code></pre></div></div>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::createTable(string $tableName, array $ColumnAndDataType, string $primaryKey = null)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table to be created.</li>
+<li class=""><strong><code>$ColumnAndDataType</code></strong>: An array specifying the columns and their data types.</li>
+<li class=""><strong><code>$primaryKey</code></strong> (optional): The column name is designated as the primary key.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function offers a flexible and efficient means to dynamically create tables, making it an indispensable tool for database schema management within your applications.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=insertintometatable>insertIntoMetaTable<a href=#insertintometatable class=hash-link aria-label="Direct link to insertIntoMetaTable" title="Direct link to insertIntoMetaTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>insertIntoMetaTable</code></strong> function is designed to insert data into metatables. Users need to specify the meta table name, a unique column name, the unique value for that column, and the data to be inserted.</p>
+<p>The <strong><code>$dataToInsert</code></strong> array should follow this format:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">$dataToInsert = array(</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">											"contact_name" => 'Thilina',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">											"contact_occupation" => 'CEO',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">											 // Add more data as needed</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">									);</span><br/></div></code></pre></div></div>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::insertIntoMetaTable(string $tableName, string $uniqueColumn, string $uniqueValue, array $dataToInsert)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the meta table where data will be inserted.</li>
+<li class=""><strong><code>$uniqueColumn</code></strong>: The unique column name in the meta table.</li>
+<li class=""><strong><code>$uniqueValue</code></strong>: The unique value corresponding to the specified unique column.</li>
+<li class=""><strong><code>$dataToInsert</code></strong>: An array containing the data to be inserted into the meta table.</li>
+</ul>
+<p><strong>Returns:</strong> returns true if success and false if not success</p>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a streamlined approach to insert metadata, making it a valuable asset for managing metadata associated with various tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getrecordsfrommetatable>getRecordsFromMetaTable<a href=#getrecordsfrommetatable class=hash-link aria-label="Direct link to getRecordsFromMetaTable" title="Direct link to getRecordsFromMetaTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getRecordsFromMetaTable</code></strong> function is engineered to retrieve data from meta tables. Users must specify the meta table name, a unique column name, and the unique value for that column.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getRecordsFromMetaTable(string $tableName, string $uniqueColumn, string $uniqueValue)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the metatable where data will be retrieved.</li>
+<li class=""><strong><code>$uniqueColumn</code></strong>: The unique column name in the meta table.</li>
+<li class=""><strong><code>$uniqueValue</code></strong>: The unique value corresponding to the specified unique column.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>Array</code></strong> of data if the retrieve is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a streamlined approach to retrieving metadata, making it a valuable asset for managing metadata associated with various tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=updatemetatable>updateMetaTable<a href=#updatemetatable class=hash-link aria-label="Direct link to updateMetaTable" title="Direct link to updateMetaTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>updateMetaTable</code></strong> function is engineered to update data in metatables. It updates existing records if the specified value exists and inserts a new record if it does not.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::updateMetaTable(string $tableName, string $uniqueColumn, string $uniqueValue, string $meta_key_column, string $updating_value)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the metatable where data will be retrieved.</li>
+<li class=""><strong><code>$uniqueColumn</code></strong>: The unique column name in the meta table.</li>
+<li class=""><strong><code>$uniqueValue</code></strong>: The unique value corresponding to the specified unique column.</li>
+<li class=""><strong><code>$meta_key_column</code></strong>: The meta key is to be updated in the meta table.</li>
+<li class=""><strong><code>$updating_value</code></strong>: The new value to be set in the specified meta key column.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a streamlined approach to update metadata, seamlessly managing metadata associated with various tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=deletemetatablerecords>deleteMetaTableRecords<a href=#deletemetatablerecords class=hash-link aria-label="Direct link to deleteMetaTableRecords" title="Direct link to deleteMetaTableRecords" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>deleteMetaTableRecords</code></strong> function is engineered to delete records from meta tables, providing an efficient and streamlined approach to data removal based on a unique key.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::deleteMetaTableRecords(string $tableName, string $uniqueColumn, string $uniqueValue)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the metatable where data will be retrieved.</li>
+<li class=""><strong><code>$uniqueColumn</code></strong>: The unique column name in the meta table.</li>
+<li class=""><strong><code>$uniqueValue</code></strong>: The unique value corresponding to the specified unique column.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides an efficient and streamlined approach to deleting metadata, making it an invaluable asset for managing metadata associated with various tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=deletemetatablevalue>deleteMetaTableValue<a href=#deletemetatablevalue class=hash-link aria-label="Direct link to deleteMetaTableValue" title="Direct link to deleteMetaTableValue" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>deleteMetaTableValue</code></strong> function is engineered to delete a specific record from meta tables, providing an efficient and streamlined approach to data removal based on a unique key and meta key.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::deleteMetaTableValue(string $tableName, string $uniqueColumn, string $uniqueValue, string $meta_key_column)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the metatable where data will be retrieved.</li>
+<li class=""><strong><code>$uniqueColumn</code></strong>: The unique column name in the meta table.</li>
+<li class=""><strong><code>$uniqueValue</code></strong>: The unique value corresponding to the specified unique column.</li>
+<li class=""><strong><code>meta_key_column</code></strong>: The meta key associated with the record to be deleted.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to deleting metadata, making it an invaluable asset for managing metadata associated with various tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=insertintotable>insertInToTable<a href=#insertintotable class=hash-link aria-label="Direct link to insertInToTable" title="Direct link to insertInToTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>insertInToTable</code></strong> function is engineered to insert values into a specified table. Users need to pass the table name and data as an associative array.</p>
+<p>The <strong><code>$data</code></strong> array should follow this format:</p>
+<ul>
+<li class="">The array key should be the column name</li>
+<li class="">The array value should be the value you want to insert</li>
+</ul>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">$data = array(</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "name" => 'John',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "age" => '20',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    // Add more data as needed</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">);</span><br/></div></code></pre></div></div>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::insertInToTable(string $tableName, array $data)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table where data will be inserted.</li>
+<li class=""><strong><code>$data</code></strong>: An associative array containing the data to be inserted into the table.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to insert data into tables, making it an invaluable asset for managing various tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=insertmultiple>insertMultiple<a href=#insertmultiple class=hash-link aria-label="Direct link to insertMultiple" title="Direct link to insertMultiple" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>insertMultiple</code></strong> function is engineered to insert multiple values into a specified table. Users need to pass the table name and data as an associative array. The array keys should correspond to the column names, and the array values should contain arrays of data to be inserted.</p>
+<p>The <strong><code>$dataArray</code></strong> array should follow this format:</p>
+<ul>
+<li class="">The <strong><code>column</code></strong> key’s value should be an array of column names.</li>
+<li class="">The <strong><code>dataArray</code></strong> key’s value should be an array of data to insert.</li>
+</ul>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">$dataArray = array(</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">				'column' => array("first_name", "last_name"),</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">				'data' => array(</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">										array("first_name" => "Kaylee", "last_name" => "Frye"),</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">									  array("first_name" => "Jayne", "last_name" => "Cobb"),</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">										array("first_name" => "Jayne", "last_name" => "Cobb")</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">									)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">					);</span><br/></div></code></pre></div></div>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::insertMultiple(string $tableName, array $dataArray)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table where data will be inserted.</li>
+<li class=""><strong><code>$dataArray</code></strong>: An associative array containing the data to be inserted into the table. It should have a 'column' key with an array of column names and a 'data' key with an array of arrays containing the data.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to batch data insertion into tables, making it an invaluable asset for managing various tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=updatetable>updateTable<a href=#updatetable class=hash-link aria-label="Direct link to updateTable" title="Direct link to updateTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>updateTable</code></strong> function is engineered to update specific record values in a table. Users need to pass the table name, data, and criteria for updating records.</p>
+<p>The <strong><code>$data</code></strong> array should follow this format:</p>
+<ul>
+<li class="">The array key should be the column name</li>
+<li class="">The array value should be the value you want to update</li>
+</ul>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">$data = array(</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "name" => 'John',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "age" => '20',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    // Add more data as needed</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">);</span><br/></div></code></pre></div></div>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::updateTable(string $tableName, array $data, string $where_column_name, string $where_value)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the metatable where data will be retrieved.</li>
+<li class=""><strong><code>$uniqueColumn</code></strong>: The unique column name in the meta table.</li>
+<li class=""><strong><code>$where_column_name</code></strong>:  The column name for the WHERE clause.</li>
+<li class=""><strong><code>$where_value</code></strong>: The value to be matched in the WHERE clause.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to update table records, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=addprimarykeytotable>addPrimaryKeyToTable<a href=#addprimarykeytotable class=hash-link aria-label="Direct link to addPrimaryKeyToTable" title="Direct link to addPrimaryKeyToTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>addPrimaryKeyToTable</code></strong> function is engineered to add a primary key to a specified table.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::addPrimaryKeyToTable(string $table, string $primarykeycolumn)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table where the primary key will be added.</li>
+<li class=""><strong><code>$primarykeycolumn</code></strong>: The name of the primary key column to be added to the table.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to adding the primary key to the table. making it an invaluable asset for managing metadata associated with various tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=deletefromtable>deleteFromTable<a href=#deletefromtable class=hash-link aria-label="Direct link to deleteFromTable" title="Direct link to deleteFromTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <code>deleteFromTable</code> function is engineered to delete records from the specified table based on a provided condition.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::deleteFromTable(string $tableName, string $where_column_name, string $where_value)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table.</li>
+<li class=""><strong><code>$where_column_name</code></strong>: The column name for the WHERE clause.</li>
+<li class=""><strong><code>$where_value</code></strong>: The value to be matched in the WHERE clause.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to deleting records from the table. making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=deletefromtablemultiplewhere>deleteFromTableMultipleWhere<a href=#deletefromtablemultiplewhere class=hash-link aria-label="Direct link to deleteFromTableMultipleWhere" title="Direct link to deleteFromTableMultipleWhere" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>deleteFromTableMultipleWhere</code></strong> function is engineered to delete records from the specified table based on multiple conditions.</p>
+<p>The <strong><code>$data</code></strong> array should follow this format:</p>
+<ul>
+<li class="">The array key should be the column name</li>
+<li class="">The array value should be the matching value you want to delete</li>
+</ul>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">$where_columns_n_values = array(</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "type" => 'animals',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    "category" => 'cats',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    // Add more data as needed</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">);</span><br/></div></code></pre></div></div>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::deleteFromTableMultipleWhere(string $tableName, array $where_columns_n_values)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table.</li>
+<li class=""><strong><code>$where_columns_n_values:</code></strong> An associative array containing column names as keys and corresponding values as values, representing the conditions for deletion.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to deleting records from a table based on multiple conditions, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=droptable>dropTable<a href=#droptable class=hash-link aria-label="Direct link to dropTable" title="Direct link to dropTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>dropTable</code></strong> function is engineered to drop the specified table from the database.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::dropTable(string $tableName)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table will be dropped.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to drop a table, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=emptytable>emptyTable<a href=#emptytable class=hash-link aria-label="Direct link to emptyTable" title="Direct link to emptyTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>emptyTable</code></strong> function is engineered to remove all data from the specified table, effectively emptying its contents.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::emptyTable(string $tableName)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table from which all data will be removed.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to empty the data from a table, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getrecordsfromtable>getRecordsFromTable<a href=#getrecordsfromtable class=hash-link aria-label="Direct link to getRecordsFromTable" title="Direct link to getRecordsFromTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getRecordsFromTable</code></strong> function is engineered to retrieve values from the specified table. Users can specify conditions for retrieval, select specific columns, and opt for distinct values.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getRecordsFromTable(string $tableName, string $where_column_name = null, string $where_value = null, array $columns = null, bool $distinct = false)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table from which data will be retrieved.</li>
+<li class=""><strong><code>$whereColumnName</code></strong>: The column name for the WHERE clause (optional).</li>
+<li class=""><strong><code>$whereValue</code></strong>: The value to be matched in the WHERE clause (optional).</li>
+<li class=""><strong><code>$columns</code></strong>: An array of column names to retrieve (optional).</li>
+<li class=""><strong><code>$distinct</code></strong>: Flag to indicate if distinct values should be retrieved (default is <strong><code>false</code></strong>).</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An <code>array</code> of data if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to retrieving data from a table, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getrecordslimited>getRecordsLimited<a href=#getrecordslimited class=hash-link aria-label="Direct link to getRecordsLimited" title="Direct link to getRecordsLimited" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getRecordsLimited</code></strong> function is engineered to retrieve values from the specified table with pagination support. Users can specify conditions for retrieval, select specific columns, and opt for distinct values.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getRecordsLimited(string $tableName, int $page, int $recordsPerPage, string $whereValue = null, string $whereColumnName = null, array $columns = null, $orderBy = null, $latestRecord = true)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table from which data will be retrieved.</li>
+<li class=""><strong><code>$page</code></strong>: The current page number for paginated retrieval.</li>
+<li class=""><strong><code>$recordsPerPage</code></strong>: The number of records to be retrieved per page.</li>
+<li class=""><strong><code>$whereColumnName</code></strong>: The column name for the WHERE clause (optional).</li>
+<li class=""><strong><code>$whereValue</code></strong>: The value to be matched in the WHERE clause (optional).</li>
+<li class=""><strong><code>$columns</code></strong>: An array of column names to retrieve (optional).</li>
+<li class=""><strong><code>$orderBy</code></strong>: The column by which the result should be ordered (optional).</li>
+<li class=""><strong><code>$latestRecord</code></strong>: Flag to indicate if the latest record should be retrieved first (default is <strong><code>true</code></strong>).</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An <code>array</code> of data if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to paginated retrieval of data from a table, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getrecordfromtable>getRecordFromTable<a href=#getrecordfromtable class=hash-link aria-label="Direct link to getRecordFromTable" title="Direct link to getRecordFromTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getRecordFromTable</code></strong> function is engineered to retrieve values from the specified table. Users can specify conditions for retrieval, select specific columns, and opt for distinct values.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getRecordFromTable(string $tableName, string $where_column_name = null, string $where_value = null, array $columns = null, bool $distinct = false)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table from which data will be retrieved.</li>
+<li class=""><strong><code>$whereColumnName</code></strong>: The column name for the WHERE clause (optional).</li>
+<li class=""><strong><code>$whereValue</code></strong>: The value to be matched in the WHERE clause (optional).</li>
+<li class=""><strong><code>$columns</code></strong>: An array of column names to retrieve (optional).</li>
+<li class=""><strong><code>$distinct</code></strong>: Flag to indicate if distinct values should be retrieved (default is <strong><code>false</code></strong>).</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An <code>array</code> of data if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to retrieving a single record from a table, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=selectlikefromtable>selectLikeFromTable<a href=#selectlikefromtable class=hash-link aria-label="Direct link to selectLikeFromTable" title="Direct link to selectLikeFromTable" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>selectLikeFromTable</code></strong> function is engineered to search for a specified pattern in a column of a table. Users can specify conditions for retrieval, select specific columns, and opt for distinct values.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::selectLikeFromTable(string $tableName, string $where, string $like, array $columns = null, $distinct = false)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table from which data will be retrieved.</li>
+<li class=""><strong><code>$where</code></strong>: The column name for the WHERE clause.</li>
+<li class=""><strong><code>$like</code></strong>: The pattern to search for in the specified column.</li>
+<li class=""><strong><code>$columns</code></strong>: An array of column names to retrieve (optional).</li>
+<li class=""><strong><code>$distinct</code></strong>: Flag to indicate if distinct values should be retrieved (default is <strong><code>false</code></strong>).</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An <code>array</code> of data if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to retrieve records based on a specified pattern in a column, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=customselectquery>customSelectQuery<a href=#customselectquery class=hash-link aria-label="Direct link to customSelectQuery" title="Direct link to customSelectQuery" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>customSelectQuery</code></strong> function is engineered to execute custom SELECT queries on a specified table. It offers flexibility by allowing users to define custom SELECT, WHERE, and JOIN clauses. Additionally, users can choose to retrieve a single result or multiple results based on the query.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::customSelectQuery(string $tableName, string $select, string $where = null, string $join = null, bool $getSingle = false)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table from which data will be retrieved.</li>
+<li class=""><strong><code>$select</code></strong>: Custom SELECT string.</li>
+<li class=""><strong><code>$where</code></strong>: Custom WHERE string (optional).</li>
+<li class=""><strong><code>$join</code></strong>: Custom JOIN string (optional).</li>
+<li class=""><strong><code>$getSingle</code></strong>: Pass <strong><code>true</code></strong> to retrieve a single result (default is <strong><code>false</code></strong>).</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An <code>array</code> of data if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to executing custom SELECT queries, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=customselectquerysingle>customSelectQuerySingle<a href=#customselectquerysingle class=hash-link aria-label="Direct link to customSelectQuerySingle" title="Direct link to customSelectQuerySingle" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>customSelectQuerySingle</code></strong> function is engineered to execute custom SELECT queries on a specified table, allowing users to define custom SELECT, WHERE, and JOIN clauses. This function is optimized for retrieving a single result based on the query.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::customSelectQuerySingle(string $tableName, string $select, string $where = null, string $join = null)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table from which data will be retrieved.</li>
+<li class=""><strong><code>$select</code></strong>: Custom SELECT string.</li>
+<li class=""><strong><code>$where</code></strong>: Custom WHERE string (optional).</li>
+<li class=""><strong><code>$join</code></strong>: Custom JOIN string (optional).</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An <code>array</code> of data if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to executing custom SELECT queries and retrieving a single result, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getrecordcount>getRecordCount<a href=#getrecordcount class=hash-link aria-label="Direct link to getRecordCount" title="Direct link to getRecordCount" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getRecordCount</code></strong> function is engineered to efficiently retrieve the record count of a specified table.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getRecordCount(string $tableName)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table from which data will be retrieved.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An <code>array</code> value represents the record count if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to retrieving the record count of a table, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=checkrecordexistbyid>checkRecordExistById<a href=#checkrecordexistbyid class=hash-link aria-label="Direct link to checkRecordExistById" title="Direct link to checkRecordExistById" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>checkRecordExistById</code></strong> function is engineered to efficiently verify the existence of a record in a specified table based on its ID.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::checkRecordExistById(string $tableName, int $id)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table from which data will be retrieved.</li>
+<li class=""><strong><code>$id</code></strong>: The ID of the record to be checked for existence.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An integer value (1) represents the record that exists.</li>
+<li class=""><strong><code>false</code></strong> if the record does not exist or if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to verifying the existence of a record in a table based on its ID, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=checkrecordexistbyidnkey>checkRecordExistByIdnKey<a href=#checkrecordexistbyidnkey class=hash-link aria-label="Direct link to checkRecordExistByIdnKey" title="Direct link to checkRecordExistByIdnKey" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>checkRecordExistByIdnKey</code></strong> function stands as an advanced tool in our framework, providing an efficient solution for verifying the existence of a record in a specified table based on both its ID and a custom key column. This comprehensive guide dissects the purpose, syntax, and optimal usage of this essential function.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::checkRecordExistByIdnKey(string $tableName, int $id, $keyColumn, $keyValue)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table from which data will be retrieved.</li>
+<li class=""><strong><code>$id</code></strong>: The ID of the record to be checked for existence.</li>
+<li class=""><strong><code>$keyColumn</code></strong>: The custom key column to be checked.</li>
+<li class=""><strong><code>$keyValue</code></strong>: The value of the custom key column to be checked.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An integer value (1) represents the record that exists.</li>
+<li class=""><strong><code>false</code></strong> if the record does not exist or if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to verifying the existence of a record in a table based on its ID and a custom key column, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getnextautoincrementid>getNextAutoIncrementID<a href=#getnextautoincrementid class=hash-link aria-label="Direct link to getNextAutoIncrementID" title="Direct link to getNextAutoIncrementID" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getNextAutoIncrementID</code></strong> function is engineered to efficiently retrieve the next auto-increment ID of a specified table.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getNextAutoIncrementID($table_name)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$tableName</code></strong>: The name of the table from which data will be retrieved.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An <code>array</code> containing the value representing the next auto-increment ID if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to retrieving the next auto-increment ID of a table, making it an invaluable asset for managing tables in your application.</p>
+<hr/>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=functions-for-app-operations>Functions For App Operations<a href=#functions-for-app-operations class=hash-link aria-label="Direct link to Functions For App Operations" title="Direct link to Functions For App Operations" translate=no>​</a></h2>
+<p>This documentation outlines key functions within our framework, tailored to optimize various app operations. Each function is meticulously crafted to enhance efficiency and streamline essential tasks. Explore the detailed descriptions and usage syntax below.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getregistered_apps>getRegistered_apps<a href=#getregistered_apps class=hash-link aria-label="Direct link to getRegistered_apps" title="Direct link to getRegistered_apps" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <code>getRegistered_apps</code> function retrieves registered apps from the system configuration file.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getRegistered_apps()</span><br/></div></code></pre></div></div>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array containing registered system apps.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<aside><p>💡 Apps are automatically registered to configuration when the app instance is created.</aside>
+<p>This function provides a precise and streamlined approach to retrieving registered apps in the configuration, making it an invaluable asset for managing apps in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=register>register<a href=#register class=hash-link aria-label="Direct link to register" title="Direct link to register" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>register</code></strong> function is used to register an app in the system configuration.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::register($app_name, $active)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$app_name</code>:</strong> The name of the app to be registered.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">void</li>
+</ul>
+<p>This function provides a precise and streamlined approach to save and register the app on the configuration, making it an invaluable asset for managing apps in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=createappinstance>CreateAppInstance<a href=#createappinstance class=hash-link aria-label="Direct link to CreateAppInstance" title="Direct link to CreateAppInstance" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>CreateAppInstance</code></strong> function is employed to instantiate an app.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::CreateAppInstance(string $AppName)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$app_name</code>:</strong> The name of the app to be create instence.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An app object upon successful operation.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function offers a straightforward and efficient way to create an instance of an app.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=checkifappexist>checkIfAppExist<a href=#checkifappexist class=hash-link aria-label="Direct link to checkIfAppExist" title="Direct link to checkIfAppExist" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <code>checkIfAppExist</code> function is utilized to verify if an app exists in the system.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::checkIfAppExist(string $appName)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$app_name</code>:</strong> The name of the app to check for existence.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the app exists.</li>
+<li class=""><strong><code>false</code></strong> if the app does not exist.</li>
+</ul>
+<p>This function provides a straightforward and efficient way to check whether an app exists in the system.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getapppermission>getAppPermission<a href=#getapppermission class=hash-link aria-label="Direct link to getAppPermission" title="Direct link to getAppPermission" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getAppPermission</code></strong> function is created to retrieve an app's permissions for internal app communications.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getAppPermission(string $app_name)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$app_name</code>:</strong> The name of the app</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array of app names allowed for communication with other apps.</li>
+<li class=""><strong><code>false</code></strong> if the app does not exist.</li>
+</ul>
+<p>This function offers a straightforward and efficient way to retrieve app permissions for internal communications,</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=createtablesfromxml>createTablesfromxml<a href=#createtablesfromxml class=hash-link aria-label="Direct link to createTablesfromxml" title="Direct link to createTablesfromxml" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>createTablesfromxml</code></strong> function generates tables for the specified app if they do not already exist. The table definitions are taken from the app's <strong><code>config.xml</code></strong> file.</p>
+<aside><p>💡 This function creates tables for the app calling the function.</aside>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::createTablesfromxml()</span><br/></div></code></pre></div></div>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">void</li>
+</ul>
+<p>This function provides a straightforward and efficient way to generate tables for an app based on its <strong><code>config.xml</code></strong> file.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=generatetablefromxml>generateTableFromXml<a href=#generatetablefromxml class=hash-link aria-label="Direct link to generateTableFromXml" title="Direct link to generateTableFromXml" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <code>generateTableFromXml</code> function generates tables for the specified app if they do not already exist. The table definitions are taken from the app's <strong><code>config.xml</code></strong> file.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::generateTableFromXml($app_name)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$app_name</code>:</strong> The name of the app to be created tables from the XML.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">void</li>
+</ul>
+<p>This function provides a straightforward and efficient way to generate tables for an app based on its <strong><code>config.xml</code></strong> file.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getappsinfo>getAppsInfo<a href=#getappsinfo class=hash-link aria-label="Direct link to getAppsInfo" title="Direct link to getAppsInfo" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getAppsInfo</code></strong> function reads the XML configurations of apps in the system and provides the info section of the XML config.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getAppsInfo()</span><br/></div></code></pre></div></div>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array containing app information in the system.</li>
+<li class="">An empty array if the operation to retrieve app information is unsuccessful.</li>
+</ul>
+<p>This function offers a straightforward and efficient way to retrieve information about apps in the system.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=extract_xml_section_from_all_app_configs>extract_xml_section_from_all_app_configs<a href=#extract_xml_section_from_all_app_configs class=hash-link aria-label="Direct link to extract_xml_section_from_all_app_configs" title="Direct link to extract_xml_section_from_all_app_configs" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>extract_xml_section_from_all_app_configs</code></strong> function extracts the specified XML section from the configuration of each application.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::extract_xml_section_from_all_app_configs($section)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$section</code>:</strong>  The section to extract from each app's configuration.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array containing the specified XML section from each app's configuration.</li>
+<li class="">An empty array if retrieval is unsuccessful.</li>
+</ul>
+<p>This function provides a straightforward and efficient way to extract a specific XML section from the configuration of all applications.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getappsuserpermissions>getAppsUserPermissions<a href=#getappsuserpermissions class=hash-link aria-label="Direct link to getAppsUserPermissions" title="Direct link to getAppsUserPermissions" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getAppsUserPermissions</code></strong> function retrieves the defined user permissions of all apps in the system.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getAppsUserPermissions()</span><br/></div></code></pre></div></div>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array of user permissions of apps.</li>
+<li class="">An empty array if retrieval is unsuccessful..</li>
+</ul>
+<p>his function offers a straightforward and efficient way to retrieve user permissions of apps.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getappuserpermission>getAppUserPermission<a href=#getappuserpermission class=hash-link aria-label="Direct link to getAppUserPermission" title="Direct link to getAppUserPermission" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getAppUserPermission</code></strong> function retrieves an app’s defined user permissions.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getAppsUserPermissions(string $app_name)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$app_name</code>:</strong> The name of the app</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array of user permissions of an app.</li>
+<li class="">An empty array if retrieval is unsuccessful.</li>
+</ul>
+<p>This function offers a straightforward and efficient way to retrieve user permissions of an app</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=gettablenames>getTableNames<a href=#gettablenames class=hash-link aria-label="Direct link to getTableNames" title="Direct link to getTableNames" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getTableNames</code></strong> function is designed to retrieve table names from the specified app’s XML config.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getTableNames($app_name = null)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$app_name</code> (optional):</strong> The name of the app. If not specified, it will get the calling app.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array of table names</li>
+<li class="">An empty array if retrieval is unsuccessful.</li>
+</ul>
+<p>This function offers a straightforward and efficient way to retrieve table names.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=runcommonfuntioninapps>runCommonFuntionInApps<a href=#runcommonfuntioninapps class=hash-link aria-label="Direct link to runCommonFuntionInApps" title="Direct link to runCommonFuntionInApps" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>runCommonFuntionInApps</code></strong> function is designed to invoke a method declared within the 'app' class. It iterates through all instances of the 'app' class and executes the specified function with the given parameters.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::runCommonFuntionInApps($function_name, $params)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$function_name</code>: The name of the function to be called within the 'app' class.</strong></li>
+<li class="">$params: An array containing any parameters needed for the function.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array containing the results of executing the specified function in each app class.</li>
+<li class="">An empty array if retrieval is unsuccessful.</li>
+</ul>
+<p>This function offers a straightforward and efficient way to invoke methods within the 'app' class for internal communication.,</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=getapprun>getAppRun<a href=#getapprun class=hash-link aria-label="Direct link to getAppRun" title="Direct link to getAppRun" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>getAppRun</code></strong> function is created to retrieve configuration tasks for an app from its XML configuration file. It retrieves configuration tasks, such as scripts and SQL queries, for a specified app from its XML configuration file (<strong><code>app_name.xml</code></strong>). The tasks are located within the 'run' element of the XML.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::getAppRun($app_name = null)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$app_name</code>:</strong> The name of the app for which configuration tasks are to be retrieved. If not provided, it is dynamically determined from the calling app.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">Returns a SimpleXMLElement representing the 'run' element from the app's XML configuration file.</li>
+<li class=""><strong><code>false</code></strong> If the file or 'run' element is not found, returns false.</li>
+</ul>
+<p>This function offers a straightforward and efficient way to retrieve configuration tasks from the XML file of a specified app.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=runconfig>runConfig<a href=#runconfig class=hash-link aria-label="Direct link to runConfig" title="Direct link to runConfig" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>runConfig</code></strong> function is designed to execute configuration tasks for an app, including scripts and SQL queries. This function executes configuration tasks for an app, obtained from the 'AppRun' configuration. Tasks can include running scripts or executing SQL queries, depending on the configuration.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::runConfig($app_name = null)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$app_name</code>:</strong> The name of the app for which configuration tasks are to be retrieved. If not provided, it is dynamically determined from the calling app.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">Returns an array indicating the success of each configuration task.</li>
+<li class=""><strong><code>false</code></strong> If no tasks are executed, returns false.</li>
+</ul>
+<p>This function provides a straightforward and efficient way to execute configuration tasks for an app based on the 'AppRun' configuration.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=initialize_app>initialize_app<a href=#initialize_app class=hash-link aria-label="Direct link to initialize_app" title="Direct link to initialize_app" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>initialize_app</code></strong> function is designed to initialize an app by creating/updating its database tables, adding columns, and managing permissions. This function performs the following tasks:</p>
+<ul>
+<li class="">Determines the app name, either from the provided parameter or dynamically from the calling app.</li>
+<li class="">Uses <strong><code>AppManager::DBFunctions()</code></strong> to manage database-related functions.</li>
+<li class="">Retrieves tables from XML configuration and checks/creates each table in the database.</li>
+<li class="">Adds new columns to existing tables if necessary.</li>
+<li class="">Manages user permissions for both app users and the admin panel.</li>
+<li class="">Executes app-specific scripts using <strong><code>AppManager::runConfig()</code></strong>.</li>
+</ul>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::initialize_app($app_name = null)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$app_name</code>:</strong> The name of the app to initialize. If not provided, it is dynamically determined from the calling app.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">Returns an array with information about the initialization process.</li>
+<li class=""><strong><code>false</code></strong> if an error occurs.</li>
+</ul>
+<p>This function provides a comprehensive and efficient way to initialize an app, ensuring that database tables, columns, and permissions are set up correctly.</p>
+<hr/>
+<h1>AppManagerDatabaseFunctions Class</h1>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=functions-for-database-operations-1>Functions For Database Operations<a href=#functions-for-database-operations-1 class=hash-link aria-label="Direct link to Functions For Database Operations" title="Direct link to Functions For Database Operations" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=check_table_exist>check_table_exist<a href=#check_table_exist class=hash-link aria-label="Direct link to check_table_exist" title="Direct link to check_table_exist" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>check_table_exist</code></strong> function is used to check if the specified table exists in the database.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::check_table_exist($table_name)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$table_name</code>:</strong> The name of the table</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the table exists.</li>
+<li class=""><strong><code>false</code></strong> if the table does not exist.</li>
+</ul>
+<p>This function provides a straightforward and efficient way to check the existence of a table in the database.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=create_table>create_table<a href=#create_table class=hash-link aria-label="Direct link to create_table" title="Direct link to create_table" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>create_table</code></strong> function is used to create a table in the database.</p>
+<p>The <strong><code>$table</code></strong> array should follow this format:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">$table = array(</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    'name' => 'your_table_name',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    'column' => array(</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        array(</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">            'name' => 'column1',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">            'type' => 'datatype1',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">            'size' => 'size1',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">            'default' => 'default_value1',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">            'attributes' => 'additional_attributes1',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">            'null' => 'true_or_false', // 'true' for NULL, 'false' for NOT NULL</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">            'autoincrement' => 'true_or_false', // 'true' for AUTO_INCREMENT, 'false' for no autoincrement</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">            'primarykey' => 'true_or_false', // 'true' if this column is part of the primary key, 'false' otherwise</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        ),</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        // Additional columns can be added similarly</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        array(</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">            'name' => 'column2',</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">            // ... (other column properties)</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">        ),</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    ),</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">);</span><br/></div></code></pre></div></div>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::create_table($table,$prefix)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$table</code>:</strong> The data of the table to be created.</li>
+<li class=""><strong><code>$prefix</code>:</strong> The table prefix.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the table is successfully created.</li>
+<li class=""><strong><code>false</code></strong> if the table creation fails.</li>
+</ul>
+<p>This function provides a straightforward and efficient way to create a table in the database.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=get_columns>get_columns<a href=#get_columns class=hash-link aria-label="Direct link to get_columns" title="Direct link to get_columns" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>get_columns</code></strong> function is used to retrieve the columns of a specified table.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::get_columns($table_name)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$table_name</code>:</strong> The name of the table</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array of columns</li>
+<li class=""><strong><code>false</code></strong> if the table does not exist.</li>
+</ul>
+<p>This function offers a precise and efficient way to retrieve the columns of a table.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=get_column_info>get_column_info<a href=#get_column_info class=hash-link aria-label="Direct link to get_column_info" title="Direct link to get_column_info" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>get_column_info</code></strong> function is used to retrieve information about a specific column in a table.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::get_column_info($table_name, $column_name)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$table_name</code></strong>: The name of the table to get column info.</li>
+<li class=""><strong><code>$column_name</code></strong>: The column name to get info.</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class="">An array containing information about the specified column.</li>
+<li class=""><strong><code>false</code></strong> if the table or column does not exist.</li>
+</ul>
+<p>This function offers a precise and efficient way to retrieve information about a specific column in a table.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=update_column>update_column<a href=#update_column class=hash-link aria-label="Direct link to update_column" title="Direct link to update_column" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>update_column</code></strong> function is used to update the properties of a column in a table.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::update_column($table_name, $column_name, $type, $size = null, $default = null, $attributes = null, $nullable = false, $new_column_name = null)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$table_name</code></strong>: The name of the table in which the column exists.</li>
+<li class=""><strong><code>$column_name</code></strong>: The name of the column to be updated.</li>
+<li class=""><strong><code>$type</code></strong>: The new data type for the column.</li>
+<li class=""><strong><code>$size</code></strong>: The new size for the column (optional).</li>
+<li class=""><strong><code>$default</code></strong>: The new default value for the column (optional).</li>
+<li class=""><strong><code>$attributes</code></strong>: The new attributes for the column (optional).</li>
+<li class=""><strong><code>$nullable</code></strong>: Boolean indicating whether the column should be nullable (default is <strong><code>false</code></strong>).</li>
+<li class=""><strong><code>$new_column_name</code></strong>: The new name for the column (optional).</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to updating the properties of a column in a table, making it an invaluable asset for managing database schema changes in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=add_column>add_column<a href=#add_column class=hash-link aria-label="Direct link to add_column" title="Direct link to add_column" translate=no>​</a></h3>
+<p>Description:</p>
+<p>The <strong><code>add_column</code></strong> function is used to add a new column to a table in the database.</p>
+<p>Syntax:</p>
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">AppManager::add_column($table_name, $column_name, $type, $size = null, $default = null, $attributes = null, $nullable = false)</span><br/></div></code></pre></div></div>
+<p><strong>Parameters</strong>:</p>
+<ul>
+<li class=""><strong><code>$table_name</code></strong>: The name of the table to which the new column will be added.</li>
+<li class=""><strong><code>$column_name</code></strong>: The name of the new column.</li>
+<li class=""><strong><code>$type</code></strong>: The data type of the new column.</li>
+<li class=""><strong><code>$size</code></strong>: The size of the new column (optional).</li>
+<li class=""><strong><code>$default</code></strong>: The default value for the new column (optional).</li>
+<li class=""><strong><code>$attributes</code></strong>: The attributes for the new column (optional).</li>
+<li class=""><strong><code>$nullable</code></strong>: Boolean indicating whether the new column should be nullable (default is <strong><code>false</code></strong>).</li>
+</ul>
+<p><strong>Returns:</strong></p>
+<ul>
+<li class=""><strong><code>true</code></strong> if the operation is successful.</li>
+<li class=""><strong><code>false</code></strong> if the operation is not successful.</li>
+</ul>
+<p>This function provides a precise and streamlined approach to adding a new column to a table, making it an invaluable asset for managing database schema changes in your application.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=compareandupdatecolumn>compareAndUpdateColumn<a href=#compareandupdatecolumn class=hash-link aria-label="Direct link to compareAndUpdateColumn" title="Direct link to compareAndUpdateColumn" translate=no>​</a></h3>
+<hr/></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/framework/Modules/App Manager.md" target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docloud-docs-public/docs/framework/Get Started"><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Get Started</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docloud-docs-public/docs/framework/Modules/Curl><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Curl</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#functions-for-database-operations class="table-of-contents__link toc-highlight">Functions For Database Operations</a><ul><li><a href=#createtable class="table-of-contents__link toc-highlight">createTable</a><li><a href=#insertintometatable class="table-of-contents__link toc-highlight">insertIntoMetaTable</a><li><a href=#getrecordsfrommetatable class="table-of-contents__link toc-highlight">getRecordsFromMetaTable</a><li><a href=#updatemetatable class="table-of-contents__link toc-highlight">updateMetaTable</a><li><a href=#deletemetatablerecords class="table-of-contents__link toc-highlight">deleteMetaTableRecords</a><li><a href=#deletemetatablevalue class="table-of-contents__link toc-highlight">deleteMetaTableValue</a><li><a href=#insertintotable class="table-of-contents__link toc-highlight">insertInToTable</a><li><a href=#insertmultiple class="table-of-contents__link toc-highlight">insertMultiple</a><li><a href=#updatetable class="table-of-contents__link toc-highlight">updateTable</a><li><a href=#addprimarykeytotable class="table-of-contents__link toc-highlight">addPrimaryKeyToTable</a><li><a href=#deletefromtable class="table-of-contents__link toc-highlight">deleteFromTable</a><li><a href=#deletefromtablemultiplewhere class="table-of-contents__link toc-highlight">deleteFromTableMultipleWhere</a><li><a href=#droptable class="table-of-contents__link toc-highlight">dropTable</a><li><a href=#emptytable class="table-of-contents__link toc-highlight">emptyTable</a><li><a href=#getrecordsfromtable class="table-of-contents__link toc-highlight">getRecordsFromTable</a><li><a href=#getrecordslimited class="table-of-contents__link toc-highlight">getRecordsLimited</a><li><a href=#getrecordfromtable class="table-of-contents__link toc-highlight">getRecordFromTable</a><li><a href=#selectlikefromtable class="table-of-contents__link toc-highlight">selectLikeFromTable</a><li><a href=#customselectquery class="table-of-contents__link toc-highlight">customSelectQuery</a><li><a href=#customselectquerysingle class="table-of-contents__link toc-highlight">customSelectQuerySingle</a><li><a href=#getrecordcount class="table-of-contents__link toc-highlight">getRecordCount</a><li><a href=#checkrecordexistbyid class="table-of-contents__link toc-highlight">checkRecordExistById</a><li><a href=#checkrecordexistbyidnkey class="table-of-contents__link toc-highlight">checkRecordExistByIdnKey</a><li><a href=#getnextautoincrementid class="table-of-contents__link toc-highlight">getNextAutoIncrementID</a></ul><li><a href=#functions-for-app-operations class="table-of-contents__link toc-highlight">Functions For App Operations</a><ul><li><a href=#getregistered_apps class="table-of-contents__link toc-highlight">getRegistered_apps</a><li><a href=#register class="table-of-contents__link toc-highlight">register</a><li><a href=#createappinstance class="table-of-contents__link toc-highlight">CreateAppInstance</a><li><a href=#checkifappexist class="table-of-contents__link toc-highlight">checkIfAppExist</a><li><a href=#getapppermission class="table-of-contents__link toc-highlight">getAppPermission</a><li><a href=#createtablesfromxml class="table-of-contents__link toc-highlight">createTablesfromxml</a><li><a href=#generatetablefromxml class="table-of-contents__link toc-highlight">generateTableFromXml</a><li><a href=#getappsinfo class="table-of-contents__link toc-highlight">getAppsInfo</a><li><a href=#extract_xml_section_from_all_app_configs class="table-of-contents__link toc-highlight">extract_xml_section_from_all_app_configs</a><li><a href=#getappsuserpermissions class="table-of-contents__link toc-highlight">getAppsUserPermissions</a><li><a href=#getappuserpermission class="table-of-contents__link toc-highlight">getAppUserPermission</a><li><a href=#gettablenames class="table-of-contents__link toc-highlight">getTableNames</a><li><a href=#runcommonfuntioninapps class="table-of-contents__link toc-highlight">runCommonFuntionInApps</a><li><a href=#getapprun class="table-of-contents__link toc-highlight">getAppRun</a><li><a href=#runconfig class="table-of-contents__link toc-highlight">runConfig</a><li><a href=#initialize_app class="table-of-contents__link toc-highlight">initialize_app</a></ul><li><a href=#functions-for-database-operations-1 class="table-of-contents__link toc-highlight">Functions For Database Operations</a><ul><li><a href=#check_table_exist class="table-of-contents__link toc-highlight">check_table_exist</a><li><a href=#create_table class="table-of-contents__link toc-highlight">create_table</a><li><a href=#get_columns class="table-of-contents__link toc-highlight">get_columns</a><li><a href=#get_column_info class="table-of-contents__link toc-highlight">get_column_info</a><li><a href=#update_column class="table-of-contents__link toc-highlight">update_column</a><li><a href=#add_column class="table-of-contents__link toc-highlight">add_column</a><li><a href=#compareandupdatecolumn class="table-of-contents__link toc-highlight">compareAndUpdateColumn</a></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docloud-docs-public/docs/intro>Tutorial</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docloud-docs-public/blog>Blog</a><li class=footer__item><a href=https://github.com/facebook/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 My Project, Inc. Built with Docusaurus.</div></div></div></footer></div></body>
