@@ -956,8 +956,6 @@ readme.txt │ │ ├── route.js │ │ └── services.js
 
 4. Let’s test and examine the response. Our endpoint can use a tool like [**Postman**](https://www.postman.com/). but first, we need to call the auth/login with the email and password and log in.
 
-   ![image.png](Todo%20App/image.png)
-
 5. Then we can test `get_todo` endpoint from the tool.
 6. After completing these steps, you've successfully set up the get todo endpoint. Now, let's explore how we can create the add todo endpoint.
 
@@ -2376,6 +2374,7 @@ Congratulations! We've successfully implemented the to-do list view and complete
         created() {},
       };
       ```
+
 2. Now we have created the form component. Let’s open the todo_add.js to develop.
 
    ```php

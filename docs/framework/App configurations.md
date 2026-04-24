@@ -478,10 +478,6 @@ Specifies whether the app is a System app or a regular application.
 
 - app_types: `application / system_app`
 
-### <**app_image**>
-
-The **`<app_image>`** tag defines the location of the application icon.
-
 **Steps to add an app image**
 
 1. Place your icon in the app's frontend root directory at **`"/assets/images/app_icons/"`**.
@@ -836,9 +832,8 @@ In this example:
   - **`company_id`** meta key for which cleanup will be executed.
     <aside>
     💡 Here you can add multiple meta keys under **<database>** tag
-    
-    </aside>
 
+    </aside>
 
 This configuration ensures that, upon uninstallation, specified cleanup actions related to the database's **`company_id`** metadata will be executed, contingent on the app's permissions
 
