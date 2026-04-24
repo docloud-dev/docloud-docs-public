@@ -11,8 +11,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site',
-  url: 'https://docloud-dev.github.io',
-  baseUrl: '/docloud-docs-public/',
+  url: 'https://dev.docloud.lk',
+  baseUrl: '/',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
