@@ -2,20 +2,6 @@
 
 Owner: Nuwan Danushka
 
-[Common Functions](Util/Common%20Functions%2063a749c3562a44398de05cf3bcd3f4ab.md)
-
-[Date And Time Manager](Util/Date%20And%20Time%20Manager%209506b28358f54c7bb7bd766f1eccfef5.md)
-
-[IP Manager](Util/IP%20Manager%20a6c3f6cbe2e549aea3d77615ee5b2856.md)
-
-[QR Code](Util/QR%20Code%20ffd43d657d9a4fb8a2741fb52e7b0a96.md)
-
-[Time Zone](Util/Time%20Zone%2048a10dc3aa7e4666842403979d15b99d.md)
-
-[Validation](Util/Validation%209adf6730c7b44bf8a7ea221e7e0f1af8.md)
-
----
-
 # Introduction
 
 The Util module in the DoFramework delivers a versatile toolkit comprising essential utility classes tailored to streamline common programming challenges. From handling date and time functionalities to managing IP addresses and performing data validations, this module offers a comprehensive array of tools to simplify development tasks. With classes such as CommonFunctions, DateTime, IPManager, TimeZone, and Validations, developers gain access to reusable components that enhance code efficiency and maintainability. By incorporating the Util Classes module into their projects, developers can accelerate development workflows, promote code reusability, and ensure robustness across various application scenarios.
@@ -24,7 +10,7 @@ The Util module in the DoFramework delivers a versatile toolkit comprising essen
 
 # How to Access The Util Module’s Classes
 
-To access the classes within the Util module, you can utilize either Type 1 or Type 2. 
+To access the classes within the Util module, you can utilize either Type 1 or Type 2.
 
 Type 1 includes static methods, while Type 2 does not.
 
@@ -34,7 +20,7 @@ Type 1 includes static methods, while Type 2 does not.
 
 ```php
 // Access Util class for static methods
-$timestamp = Util::DateAndTimeManager()::get_timestamp(); 
+$timestamp = Util::DateAndTimeManager()::get_timestamp();
 ```
 
 In this step:

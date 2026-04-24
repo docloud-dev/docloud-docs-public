@@ -2,26 +2,6 @@
 
 **Pages**
 
-[Docloud](DoFramework%20-%20Wiki/Docloud%200ba197d327db4e4eb668094ca07703eb.md)
-
-[Get Started](DoFramework%20-%20Wiki/Get%20Started%2050c5324171de4a79aca19c727c7ebe4c.md)
-
-[Hello world!](DoFramework%20-%20Wiki/Hello%20world!%206518239ebd9c417aaf4c67a8a4732ef3.md)
-
-[Admin Panel](DoFramework%20-%20Wiki/Admin%20Panel%206e12edfcb3324ed489ab6bd03ef46222.md)
-
-[App configurations.](DoFramework%20-%20Wiki/App%20configurations%20e1769dd152f242b1a5ed037f4fbadba0.md)
-
-[Vue DC UI KIT](DoFramework%20-%20Wiki/Vue%20DC%20UI%20KIT%20bc81cfbaa73949ed906e6b1a693b20b3.md)
-
-[Core Classes](DoFramework%20-%20Wiki/Core%20Classes%20bb4b4833a10b4d37b7b2acb9ee5091af.md)
-
-[Essentials](DoFramework%20-%20Wiki/Essentials%20f37ad879132f4a00bc03dfa2a672d3d8.md)
-
-[Modules](DoFramework%20-%20Wiki/Modules%205da268c83ba54909b2142467f65a4335.md)
-
-[Todo App](DoFramework%20-%20Wiki/Todo%20App%206e60ed3dd9914618be7184dddf9606b7.md)
-
 # Introduction
 
 Welcome to the official developer documentation for the Do Framework, a powerful platform for building custom applications. This comprehensive guide is designed to empower developers like you to harness the full potential of the Do Framework, enabling you to create scalable, feature-rich, and innovative solutions for a diverse range of business needs.
@@ -53,8 +33,6 @@ The DoCloud App SDK has the following minimum system requirements:
 - PHP Memory Limit: 64MB or Above Recommended
 - Security (SSL): TLS 1.0 or above (not tested)
 - .htacess Support
-
-For further information, please see [this resource](DoFramework%20-%20Wiki/Get%20Started%2050c5324171de4a79aca19c727c7ebe4c.md).
 
 ### **Documentation:**
 

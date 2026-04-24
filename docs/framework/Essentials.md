@@ -2,26 +2,6 @@
 
 Owner: Nuwan Danushka
 
-[Notification](Essentials/Notification%2001c7c53976c84a5b979c4d9ccdcfcc94.md)
-
-[Email](Essentials/Email%203d6dbd1402824b80a0cf57605d2199e8.md)
-
-[Authentication ](Essentials/Authentication%20628f7ce7b4e748c7a2b590a6c03f358e.md)
-
-[Logging](Essentials/Logging%20df23018b67144d9e838092bcb1b0e731.md)
-
-[Localization](Essentials/Localization%202014134be60d4bbba9a204f37ea96543.md)
-
-[App Options](Essentials/App%20Options%2096e90014b7ef4676b468c16ee876a268.md)
-
-[Service Worker](Essentials/Service%20Worker%20d7e7e8121c8d4b8ab6fafed108961978.md)
-
-[Config Handlers](Essentials/Config%20Handlers%202fe5026f74b84e20925478470740d272.md)
-
-[User Device Detection](Essentials/User%20Device%20Detection%2066e5ef96e308437da4c6521833bcd355.md)
-
-[Scheduler (Heartbeat) ](Essentials/Scheduler%20(Heartbeat)%2050672af71a8f401eb6ff38f749866bc9.md)
-
 ---
 
 # Introduction
@@ -67,39 +47,39 @@ To move the **DoFramework** from one server to another or create a backup, follo
 ### 1. **Copy the Framework Files**
 
 - **What to do**: Make a copy of the entire working framework, including these important folders:
-    - **API**
-    - **App**
-    - **Assets**
-    - **Storage**
-    - All other essential files are in the public directory.
+  - **API**
+  - **App**
+  - **Assets**
+  - **Storage**
+  - All other essential files are in the public directory.
 - **How**: You can zip the entire framework directory.
 
 ### 2. **Export the Database**
 
 - **What to do**: Export the database using a tool like **PHPMyAdmin** or **Direct Admin Databases**.
 - **How**:
-    - In **PHPMyAdmin** or your database manager, go to your database.
-    - Choose the **Export** option and download the SQL file.
+  - In **PHPMyAdmin** or your database manager, go to your database.
+  - Choose the **Export** option and download the SQL file.
 
 ### 3. **Update Configuration Files**
 
 - **File to update**: `configs.development.xml`.
 - **What to change**:
-    - **Database settings**: Update the database connection details under the `<databases>` section, like database name, user, and password.
-    - **System settings**: Update the `system_sitepath` (the path where the system is installed on the new server).
-    - **System email**: Update the email address used for system notifications in the `system` section.
+  - **Database settings**: Update the database connection details under the `<databases>` section, like database name, user, and password.
+  - **System settings**: Update the `system_sitepath` (the path where the system is installed on the new server).
+  - **System email**: Update the email address used for system notifications in the `system` section.
 
 ### 4. **Change Email Settings (If Necessary)**
 
 - **What to do**: If you need to change how the system sends emails, update the **SMTP settings**.
-- **Where**: In the `<smtp>` section of the  `<email>` in `configs.development.xml` file.
-    - You might need to change the SMTP server, port, username, or password, depending on your email provider.
+- **Where**: In the `<smtp>` section of the `<email>` in `configs.development.xml` file.
+  - You might need to change the SMTP server, port, username, or password, depending on your email provider.
 
 ### 5. **Change System Token (If Necessary)**
 
 - **What to do**: If you need to change how the DoCloud identifies the application, update the **System Token**.
 - **Where**: In the `<system_token>` section of the `<do_cloud>` in `config.xml` file.
-    - Update the system token tag `<system_token> token here </system_token>`
+  - Update the system token tag `<system_token> token here </system_token>`
 
 ### Final Steps:
 
