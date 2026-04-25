@@ -8,20 +8,16 @@
     <subtitle>DoCloud Developer Docs Blog</subtitle>
     <icon>https://dev.docloud.lk/img/favicon.png</icon>
     <entry>
-        <title type="html"><![CDATA[We just added Batch AI Processing!]]></title>
+        <title type="html"><![CDATA[We released our Documentation]]></title>
         <id>https://dev.docloud.lk/blog/framework-update-v2</id>
         <link href="https://dev.docloud.lk/blog/framework-update-v2"/>
         <updated>2026-04-25T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[We've integrated new overnight batch processing for the Docloud dashboard.]]></summary>
-        <content type="html"><![CDATA[<p>We've integrated new overnight batch processing for the Docloud dashboard.
-Here is how to use it...
-ok?</p>]]></content>
+        <summary type="html"><![CDATA[We've integrated docusaurus for our docs and this will help us write beautiful docs for amazing docloud developers.]]></summary>
+        <content type="html"><![CDATA[<p>We've integrated docusaurus for our docs and this will help us write beautiful docs for amazing docloud developers.</p>]]></content>
         <author>
-            <name>Yves</name>
+            <name>Thilina</name>
             <uri>https://dev.docloud.lk</uri>
         </author>
         <category label="update" term="update"/>
-        <category label="ai" term="ai"/>
-        <category label="php" term="php"/>
     </entry>
 </feed>

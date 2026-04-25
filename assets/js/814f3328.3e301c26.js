@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_docs=self.webpackChunkmy_docs||[]).push([["1833"],{5513(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"We released our Documentation","permalink":"/blog/framework-update-v2","unlisted":false,"date":"2026-04-25T00:00:00.000Z"}]}')}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkmy_docs=self.webpackChunkmy_docs||[]).push([["8416"],{6600(e){e.exports=JSON.parse('{"authors":[{"name":"Yves","title":"Developer & Business Owner","url":"https://dev.docloud.lk","imageURL":"https://github.com/docloud-dev.png","key":"yves","page":null,"count":1}]}')}}]);
