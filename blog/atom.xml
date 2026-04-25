@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://dev.docloud.lk/blog</id>
+    <title>DoCloud Developer Docs Blog</title>
+    <updated>2026-04-25T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://dev.docloud.lk/blog"/>
+    <subtitle>DoCloud Developer Docs Blog</subtitle>
+    <icon>https://dev.docloud.lk/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[We just added Batch AI Processing!]]></title>
+        <id>https://dev.docloud.lk/blog/framework-update-v2</id>
+        <link href="https://dev.docloud.lk/blog/framework-update-v2"/>
+        <updated>2026-04-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We've integrated new overnight batch processing for the Docloud dashboard.]]></summary>
+        <content type="html"><![CDATA[<p>We've integrated new overnight batch processing for the Docloud dashboard.
+Here is how to use it...
+ok?</p>]]></content>
+        <author>
+            <name>Yves</name>
+            <uri>https://dev.docloud.lk</uri>
+        </author>
+        <category label="update" term="update"/>
+        <category label="ai" term="ai"/>
+        <category label="php" term="php"/>
+    </entry>
+</feed>
