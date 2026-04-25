@@ -21,6 +21,10 @@ jobs:
 
       - name: Sync Docs and Blog
         run: |
+          # Ensure the target directories exist
+          mkdir -p docs
+          mkdir -p blog
+          
           # Remove default Docusaurus content to prevent duplicates
           rm -rf docs/*
           rm -rf blog/*
