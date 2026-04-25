@@ -3,7 +3,7 @@ on:
   push:
     branches: [main]
   repository_dispatch:
-    types: [wiki_updated] # This matches the event_type in Step 2
+    types: [wiki_updated]
 
 jobs:
   deploy:
@@ -12,12 +12,23 @@ jobs:
       - name: Checkout Docusaurus Shell
         uses: actions/checkout@v4
 
-      - name: Pull Latest Docs from Wiki Repo
+      - name: Pull Content from Wiki Repo
         uses: actions/checkout@v4
         with:
-          repository: docloud-dev/docloud-wiki # The source repo
-          path: docs # Dumps files into the Docusaurus /docs folder
+          repository: docloud-dev/docloud-wiki
+          path: temp_content # Pulls the whole wiki repo into this temp folder
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Sync Docs and Blog
+        run: |
+          # Remove default Docusaurus content to prevent duplicates
+          rm -rf docs/*
+          rm -rf blog/*
+          
+          # Move files from your wiki repo to Docusaurus folders
+          # This assumes your docloud-wiki repo has /docs and /blog folders
+          if [ -d "temp_content/docs" ]; then cp -r temp_content/docs/* docs/; fi
+          if [ -d "temp_content/blog" ]; then cp -r temp_content/blog/* blog/; fi
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -33,4 +44,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
-          cname: dev.docloud.lk
+          cname: dev.docloud.lk # Ensuring your custom domain sticks
