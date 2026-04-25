@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'DoCLoud Developer Docs',
+  title: 'DoCloud Developer Docs',
   url: 'https://dev.docloud.lk',
   baseUrl: '/',
   tagline: 'Build Real Apps Fast with DoCloud',
