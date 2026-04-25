@@ -97,7 +97,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Dev Blog', position: 'left'},
           {
             href: 'https://docloud.app',
             label: 'DoCloud Home',
@@ -138,7 +138,7 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
+                label: 'Dev Blog',
                 to: '/blog',
               },
             ],

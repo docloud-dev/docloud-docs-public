@@ -8,8 +8,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        DoCloud Framework was designed from the ground up to be easily installed and
+        used to get your web app up and running quickly.
       </>
     ),
   },
@@ -24,12 +24,12 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Powered by DoCloud',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Extend or customize your web app layout by reusing elements. DoCloud can
+        be extended while reusing the same components.
       </>
     ),
   },
