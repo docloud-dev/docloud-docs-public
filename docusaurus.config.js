@@ -14,7 +14,7 @@ const config = {
   url: 'https://dev.docloud.lk',
   baseUrl: '/',
   tagline: 'Build Real Apps Fast with DoCloud',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -30,7 +30,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'docloud-dev', // Usually your GitHub org/user name.
-  projectName: 'docloud', // Usually your repo name.
+  projectName: 'docloud-docs-public', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -88,7 +88,7 @@ const config = {
         title: 'DoCloud',
         logo: {
           alt: 'DoCloud Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
