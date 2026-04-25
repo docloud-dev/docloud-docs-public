@@ -10,10 +10,10 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'DoCLoud Developer Docs',
   url: 'https://dev.docloud.lk',
   baseUrl: '/',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Build Real Apps Fast with DoCloud',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -29,8 +29,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'docloud-dev', // Usually your GitHub org/user name.
+  projectName: 'docloud', // Usually your repo name.
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
