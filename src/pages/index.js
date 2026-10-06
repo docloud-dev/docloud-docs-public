@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="DoCloud Business App store<head />">
+      description="Guides and reference for building apps on DoFramework, the framework behind DoCloud.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

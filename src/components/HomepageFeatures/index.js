@@ -1,50 +1,52 @@
 import clsx from 'clsx';
+import Link from '@docusaurus/Link';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Build features as apps',
+    to: '/docs/framework/Building%20Apps/',
+    linkLabel: 'Building Apps',
     description: (
       <>
-        DoCloud Framework was designed from the ground up to be easily installed and
-        used to get your web app up and running quickly.
+        Each app brings its own routes, API, tables, permissions and menus. The
+        framework handles routing, sign-in, roles, the database and the admin
+        panel.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'No build step',
+    to: '/docs/framework/Vue%20DC%20UI%20KIT/',
+    linkLabel: 'Vue DC UI KIT',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        The frontend is Vue 3 components written as ES modules. Edit a file and
+        reload the page, and build screens from the UI kit&apos;s ready-made
+        components.
       </>
     ),
   },
   {
-    title: 'Powered by DoCloud',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Ship through DoCloud',
+    to: '/docs/framework/Building%20Apps/Packaging%20And%20Updates',
+    linkLabel: 'Packaging And Updates',
     description: (
       <>
-        Extend or customize your web app layout by reusing elements. DoCloud can
-        be extended while reusing the same components.
+        An app installs and updates as a zip from the admin panel, or from the
+        DoCloud App Library on any connected system.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, to, linkLabel, description}) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
-      </div>
+    <div className={clsx('col col--4', styles.feature)}>
+      <Heading as="h3">{title}</Heading>
+      <p>{description}</p>
+      <Link to={to}>{linkLabel} →</Link>
     </div>
   );
 }
