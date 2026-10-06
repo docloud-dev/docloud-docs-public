@@ -4,6 +4,12 @@
 # Production
 /build
 
+# Content from docloud-wiki
+# The deploy workflow and the wiki's preview.sh copy these in from the
+# docloud-wiki repo, which is where they are edited.
+/docs/
+/blog/
+
 # Generated files
 .docusaurus
 .cache-loader
