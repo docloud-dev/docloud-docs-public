@@ -2,11 +2,47 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dev.docloud.lk/blog</id>
     <title>DoCloud Developer Docs Blog</title>
-    <updated>2026-10-05T00:00:00.000Z</updated>
+    <updated>2026-10-07T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dev.docloud.lk/blog"/>
     <subtitle>DoCloud Developer Docs Blog</subtitle>
     <icon>https://dev.docloud.lk/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[The docs now cover DoFramework 0.0.44]]></title>
+        <id>https://dev.docloud.lk/blog/docs-for-framework-0-0-44</id>
+        <link href="https://dev.docloud.lk/blog/docs-for-framework-0-0-44"/>
+        <updated>2026-10-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[These docs now cover DoFramework 0.0.44. The biggest change in 0.0.43 and 0.0.44 is database migrations: an app can now keep its schema in PHP migration files instead of ``, and the admin panel has a page for running and rolling them back.]]></summary>
+        <content type="html"><![CDATA[<p>These docs now cover DoFramework 0.0.44. The biggest change in 0.0.43 and 0.0.44 is database migrations: an app can now keep its schema in PHP migration files instead of <code>&lt;createTables&gt;</code>, and the admin panel has a page for running and rolling them back.</p>
+<!-- -->
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="whats-new-in-the-docs">What's new in the docs<a href="https://dev.docloud.lk/blog/docs-for-framework-0-0-44#whats-new-in-the-docs" class="hash-link" aria-label="Direct link to What's new in the docs" title="Direct link to What's new in the docs" translate="no">​</a></h2>
+<ul>
+<li class=""><strong><a class="" href="https://dev.docloud.lk/docs/framework/Building%20Apps/Database%20Migrations">Database Migrations</a>.</strong> A new page on when migrations run and how they're recorded, writing <code>up()</code> and <code>down()</code>, converting an existing app with <code>make:baseline</code>, rolling back and resetting, the <code>php api/migrate.php</code> command, and the admin panel's Migrations page.</li>
+<li class=""><strong><a class="" href="https://dev.docloud.lk/docs/framework/Upgrading%20The%20Framework">Upgrading The Framework</a>.</strong> A new page on how a framework update runs, why you can skip releases, and the manual steps an update from 0.0.40 or older still needs.</li>
+<li class=""><strong><a class="" href="https://dev.docloud.lk/docs/framework/Todo%20App">Todo App</a>.</strong> The tutorial now creates its table with a migration.</li>
+<li class=""><strong><a class="" href="https://dev.docloud.lk/docs/framework/Building%20Apps/App%20Manifest">App Manifest</a></strong> now describes what <code>&lt;uninstallConfiguration&gt;</code> does. It used to say nothing reads it.</li>
+<li class=""><strong><a class="" href="https://dev.docloud.lk/docs/framework/Modules/App%20Manager">App Manager</a></strong> documents <code>syncTablesFromXml</code> and <code>show_create_table</code>, and how install and reinitialize treat an app with migrations.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="framework-changes-in-0043-and-0044">Framework changes in 0.0.43 and 0.0.44<a href="https://dev.docloud.lk/blog/docs-for-framework-0-0-44#framework-changes-in-0043-and-0044" class="hash-link" aria-label="Direct link to Framework changes in 0.0.43 and 0.0.44" title="Direct link to Framework changes in 0.0.43 and 0.0.44" translate="no">​</a></h2>
+<ul>
+<li class=""><strong>App migrations.</strong> Files in an app's <code>migrations/</code> folder run once each, in filename order, on install and on every reinitialize. An app with one migration file uses migrations only. Start new apps on migrations.</li>
+<li class=""><strong>A Migrations page in the admin panel.</strong> It lists every app's migrations, runs the pending ones and rolls back, with a preview of what will be undone. Apps still on <code>&lt;createTables&gt;</code> get a <strong>Sync tables</strong> action. It needs five new admin permissions, which reach the admin role when <code>system_admin_app</code> is reinitialized; log in to the admin panel again to see the menu.</li>
+<li class=""><strong><code>helloworld</code> uses migrations.</strong> Its <code>&lt;createTables&gt;</code> became a baseline migration, so it's now the worked example for both.</li>
+<li class=""><strong>Enum columns survive a reinitialize.</strong> An enum's list goes in <code>values</code> only. A reinitialize used to build a bare <code>enum</code> and fail.</li>
+<li class=""><strong>An upload over <code>post_max_size</code> is answered with <code>413</code>,</strong> naming the limit, instead of the action reporting its fields missing.</li>
+<li class=""><strong>No redirect loop for a user refused the dashboard.</strong> They get the error page with a <code>403</code>.</li>
+<li class=""><strong>Dev links stay out of <code>git status</code>.</strong> The framework's <code>.gitignore</code> now tracks only the bundled apps in the app folders, so a dev app needs no entry.</li>
+<li class=""><strong><code>./bump-version</code> checks the system app versions</strong> before a release.</li>
+<li class=""><strong>Popups taller than the window scroll,</strong> and a date picker's calendar shows in full inside a popup.</li>
+</ul>
+<p>See <a class="" href="https://dev.docloud.lk/docs/framework/Upgrading%20The%20Framework">Upgrading The Framework</a> before you update an older install.</p>]]></content>
+        <author>
+            <name>Nipun Lakshan</name>
+            <uri>https://dev.docloud.lk</uri>
+        </author>
+        <category label="update" term="update"/>
+        <category label="docs" term="docs"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[The docs now cover DoFramework 0.0.42]]></title>
         <id>https://dev.docloud.lk/blog/docs-for-framework-0-0-42</id>
